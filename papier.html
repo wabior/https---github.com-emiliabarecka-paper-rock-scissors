@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(54, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+            color:#f58220;
+        }
+        img{
+            margin: 20px;
+            border-radius: 10%;
+        }
+       
+        h3{
+            font-size: 32px;
+        }
+        .panel-right,
+        .panel-left{
+            display: inline-block;
+            width: 48%;
+            overflow: hidden;
+            margin: 40px auto;
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            font-size: 32px;
+            text-transform: uppercase;
+            border: 2px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20%;
+            letter-spacing: 1.7px;
+        }
+        p{
+            font-size: 26px;
+        }
+        span{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAPIER, KAMIEŃ, NOŻYCE</h1>
+    <div class = "select">
+        <h3>Wybierz</h3>
+        <img data-option = "papier" class = "first" src="papier.png" alt="papier">
+        <img data-option = "kamień" class = "second" src="kamien.png" alt="kamień">
+        <img data-option = "nożyce" class = "therd" src="nozyce.png" alt="nożyce">
+    </div>
+    <button class = "start">Zagraj</button>
+
+    <div class = "panel-left">
+        <h3>Wynik gry</h3>
+        <p>Twój wybór: <span data-summary = "your-choice"></span></p>
+        <p>Wybór kompa: <span data-summary = "ai-choice"></span></p>
+        <h2>Zwycięzca: <span data-summary = "who-win"></span></h2>
+    </div>
+    <div class = "panel-right">
+        <h3>Aktualny wynik</h3>
+        <p class = "numbers">liczba gier: <span>0</span></p>
+        <p class = "wins">wygranych: <span>0</span></p>
+        <p class = "looses">przegranych: <span>0</span></p>
+        <p class = "draws">remisy: <span>0</span></p>
+    </div>
+    <script src="moj-papier.js"></script>
+</body>
+</html>
